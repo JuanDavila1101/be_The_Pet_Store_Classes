@@ -34,6 +34,40 @@ namespace be_The_Pet_Store_Classes
       // but it's only good for one intance for all objects
       // Static vs Shared 
 
+      // Object Initializer
+      // object initialization
+      var tiger = new Tiger
+      {
+        Name = "Kisa",
+        NumberOfKills = 0,
+        Size = "Medium"
+      };
+      //var tiger = new Tiger();
+      //tiger.Name = "Kisa";
+      //tiger.NumberOfKills = 0;
+      //tiger.Size = "Medium";
+
+      tiger.Bite("Juan");
+      tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+      //tiger.Bite("Juan");
+
+      var bear = new Bear("Yogi", "Brown");
+
+      bear.EatFish(5);
+      bear.EatFish(5);
+      bear.EatFish(5);
+
+      bear.BestTigerFriend = tiger;
+
+      bear.HangOutWithBestFriend();
+
     }
   }
 
